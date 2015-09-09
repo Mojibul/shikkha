@@ -254,3 +254,75 @@ INSERT INTO tb_studentregistration
              TRUNC (SYSDATE), 'Present Address', 'Permanent Address',
              'MD. RUHUL AMIN BISWAS', 1, '023213213', 'A'
             )
+            
+CREATE TABLE tb_subject (
+subjectid NUMBER(5,0),
+subjectname VARCHAR2(100)
+);
+ALTER TABLE tb_subject
+ADD CONSTRAINT pk_tb_subject PRIMARY KEY (subjectid);
+INSERT INTO tb_subject
+            (subjectid, subjectname
+            )
+     VALUES (1, 'Bengali'
+            );
+INSERT INTO tb_subject
+            (subjectid, subjectname
+            )
+     VALUES (2, 'English'
+            );
+INSERT INTO tb_subject
+            (subjectid, subjectname
+            )
+     VALUES (3, 'Math'
+            );
+INSERT INTO tb_subject
+            (subjectid, subjectname
+            )
+     VALUES (4, 'Religion'
+            );
+INSERT INTO tb_subject
+            (subjectid, subjectname
+            )
+     VALUES (5, 'BGI'
+            );
+INSERT INTO tb_subject
+            (subjectid, subjectname
+            )
+     VALUES (6, 'General Science'
+            );
+INSERT INTO tb_subject
+            (subjectid, subjectname
+            )
+     VALUES (7, 'Agriculture'
+            );
+INSERT INTO tb_subject
+            (subjectid, subjectname
+            )
+     VALUES (8, 'Home Economics'
+            );
+INSERT INTO tb_subject
+            (subjectid, subjectname
+            )
+     VALUES (9, 'ICT'
+            );
+INSERT INTO tb_subject
+            (subjectid, subjectname
+            )
+     VALUES (10, 'BT'
+            );
+INSERT INTO tb_subject
+            (subjectid, subjectname
+            )
+     VALUES (11, 'Arts and Crafts'
+            );
+INSERT INTO tb_subject
+            (subjectid, subjectname
+            )
+     VALUES (12, 'Social Science'
+            );
+INSERT INTO tb_subject
+            (subjectid, subjectname
+            )
+     VALUES (13, 'PT'
+            );
