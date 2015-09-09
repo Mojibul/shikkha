@@ -172,3 +172,85 @@ ALTER TABLE tb_studentregistration
 ADD CONSTRAINT fk_sectionid_stdregistration FOREIGN KEY (sectionid) REFERENCES tb_studentsection(sectionid );
 ALTER TABLE tb_studentregistration
 ADD CONSTRAINT fk_relationid_stdregistration FOREIGN KEY (relationid) REFERENCES tb_relation(relationid );
+
+/* Formatted on 2015/09/09 12:17 (Formatter Plus v4.8.8) */
+INSERT INTO tb_studentregistration
+            (studentid, idno, classid, sectionid, roll, categoryid,
+             studentname, fathername,
+             mothername, dateofbirth, presentaddress,
+             permanentaddress, gurdianname, relationid, contactno,
+             studentstatus
+            )
+     VALUES (1, '05319', 8, 'A', 1, 'E',
+             'MD. RUHUL AMIN BISWAS', 'MD. ANSAR ALI BISWAS',
+             'MOST. RUMI BEGUM', TRUNC (SYSDATE), 'Present Address',
+             'Permanent Address', 'MD. RUHUL AMIN BISWAS', 1, '023213213',
+             'A'
+            );
+INSERT INTO tb_studentregistration
+            (studentid, idno, classid, sectionid, roll, categoryid,
+             studentname, fathername, mothername,
+             dateofbirth, presentaddress, permanentaddress,
+             gurdianname, relationid, contactno, studentstatus
+            )
+     VALUES (2, '03545', 8, 'A', 2, 'E',
+             'ABDULLAH JUBA', 'MD. ANSAR ALI BISWAS', 'MOST. RUMI BEGUM',
+             TRUNC (SYSDATE), 'Present Address', 'Permanent Address',
+             'MD. RUHUL AMIN BISWAS', 1, '023213213', 'A'
+            );
+INSERT INTO tb_studentregistration
+            (studentid, idno, classid, sectionid, roll, categoryid,
+             studentname, fathername, mothername,
+             dateofbirth, presentaddress, permanentaddress,
+             gurdianname, relationid, contactno, studentstatus
+            )
+     VALUES (3, '03498', 8, 'A', 3, 'E',
+             'SHADMAN NAHIY', 'MD. ANSAR ALI BISWAS', 'MOST. RUMI BEGUM',
+             TRUNC (SYSDATE), 'Present Address', 'Permanent Address',
+             'MD. RUHUL AMIN BISWAS', 1, '023213213', 'A'
+            );
+INSERT INTO tb_studentregistration
+            (studentid, idno, classid, sectionid, roll, categoryid,
+             studentname, fathername, mothername,
+             dateofbirth, presentaddress, permanentaddress,
+             gurdianname, relationid, contactno, studentstatus
+            )
+     VALUES (4, '03475', 8, 'A', 4, 'E',
+             'MD.IMRAN HOSSAIN', 'MD. ANSAR ALI BISWAS', 'MOST. RUMI BEGUM',
+             TRUNC (SYSDATE), 'Present Address', 'Permanent Address',
+             'MD. RUHUL AMIN BISWAS', 1, '023213213', 'A'
+            );
+INSERT INTO tb_studentregistration
+            (studentid, idno, classid, sectionid, roll, categoryid,
+             studentname, fathername, mothername,
+             dateofbirth, presentaddress, permanentaddress,
+             gurdianname, relationid, contactno, studentstatus
+            )
+     VALUES (5, '05316', 8, 'A', 5, 'E',
+             'MD.MANZOR NOON', 'MD. ANSAR ALI BISWAS', 'MOST. RUMI BEGUM',
+             TRUNC (SYSDATE), 'Present Address', 'Permanent Address',
+             'MD. RUHUL AMIN BISWAS', 1, '023213213', 'A'
+            );
+
+INSERT INTO tb_studentregistration
+            (studentid, idno, classid, sectionid, roll, categoryid,
+             studentname, fathername, mothername,
+             dateofbirth, presentaddress, permanentaddress,
+             gurdianname, relationid, contactno, studentstatus
+            )
+     VALUES (6, '03769', 8, 'A', 6, 'E',
+             'MD.MOHIN KHAN', 'MD. ANSAR ALI BISWAS', 'MOST. RUMI BEGUM',
+             TRUNC (SYSDATE), 'Present Address', 'Permanent Address',
+             'MD. RUHUL AMIN BISWAS', 1, '023213213', 'A'
+            );
+INSERT INTO tb_studentregistration
+            (studentid, idno, classid, sectionid, roll, categoryid,
+             studentname, fathername, mothername,
+             dateofbirth, presentaddress, permanentaddress,
+             gurdianname, relationid, contactno, studentstatus
+            )
+     VALUES (7, '03437', 8, 'A', 7, 'E',
+             'MD.AHTESHAMU', 'MD. ANSAR ALI BISWAS', 'MOST. RUMI BEGUM',
+             TRUNC (SYSDATE), 'Present Address', 'Permanent Address',
+             'MD. RUHUL AMIN BISWAS', 1, '023213213', 'A'
+            )
