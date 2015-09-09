@@ -1,0 +1,136 @@
+-- CREATE TB_CLASS TABLE
+CREATE TABLE tb_class
+(
+ classid NUMBER(2,0),
+ classname VARCHAR2(10)
+);
+ALTER TABLE tb_class
+ADD CONSTRAINT pk_tb_class PRIMARY KEY (classid);
+-- TB_CLASS SAMPLE DATA
+INSERT INTO tb_class
+            (classid, classname
+            )
+     VALUES (1, 'I'
+            );
+INSERT INTO tb_class
+            (classid, classname
+            )
+     VALUES (2, 'II'
+            );
+INSERT INTO tb_class
+            (classid, classname
+            )
+     VALUES (3, 'III'
+            );
+INSERT INTO tb_class
+            (classid, classname
+            )
+     VALUES (4, 'IV'
+            );
+INSERT INTO tb_class
+            (classid, classname
+            )
+     VALUES (5, 'V'
+            );
+INSERT INTO tb_class
+            (classid, classname
+            )
+     VALUES (6, 'VI'
+            );
+INSERT INTO tb_class
+            (classid, classname
+            )
+     VALUES (7, 'VII'
+            );
+INSERT INTO tb_class
+            (classid, classname
+            )
+     VALUES (8, 'VIII'
+            );
+INSERT INTO tb_class
+            (classid, classname
+            )
+     VALUES (9, 'IX'
+            );
+INSERT INTO tb_class
+            (classid, classname
+            )
+     VALUES (10, 'X'
+            );
+INSERT INTO tb_class
+            (classid, classname
+            )
+     VALUES (11, 'XI'
+            );
+INSERT INTO tb_class
+            (classid, classname
+            )
+     VALUES (12, 'XII'
+            );
+
+-- CREATING STUDENT CATEGORY TABLE
+CREATE TABLE tb_studentcategory
+(
+ categoryid VARCHAR2(1),
+ categoryname VARCHAR2(20)
+);
+ALTER TABLE tb_studentcategory
+ADD CONSTRAINT pk_tb_studentcategory PRIMARY KEY (categoryid);
+-- SAMPLE DATA fOR STUDENT CATEGORY TABLE
+
+INSERT INTO tb_studentcategory
+            (categoryid, categoryname
+            )
+     VALUES ('I', 'Internal'
+            );
+INSERT INTO tb_studentcategory
+            (categoryid, categoryname
+            )
+     VALUES ('E', 'External'
+            );
+
+-- CREATING SECTION TABLE
+CREATE TABLE tb_studentsection
+(
+ sectionid VARCHAR2(1),
+ sectionname VARCHAR2(20)
+);
+ALTER TABLE tb_studentsection
+ADD CONSTRAINT pk_tb_studentsection PRIMARY KEY (sectionid);
+
+-- INSERTING SAMPLE SECTION DATA
+INSERT INTO tb_studentsection
+            (sectionid, sectionname
+            )
+     VALUES ('M', 'Morning'
+            );
+INSERT INTO tb_studentsection
+            (sectionid, sectionname
+            )
+     VALUES ('E', 'Evening'
+            );
+
+-- CREATING RELATION TABLE 
+CREATE TABLE tb_relation
+(
+relationid NUMBER(3,0),
+relationname VARCHAR2(30)
+);
+ALTER TABLE tb_relation
+ADD CONSTRAINT pk_tb_relation PRIMARY KEY (relationid);
+-- INSERTING SAMPLE DATA
+INSERT INTO tb_relation
+            (relationid, relationname
+            )
+     VALUES (1, 'Second Gurdian'
+            );
+INSERT INTO tb_relation
+            (relationid, relationname
+            )
+     VALUES (2, 'Uncle'
+            );
+INSERT INTO tb_relation
+            (relationid, relationname
+            )
+     VALUES (3, 'Others'
+            );
