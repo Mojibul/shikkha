@@ -326,3 +326,34 @@ INSERT INTO tb_subject
             )
      VALUES (13, 'PT'
             );
+CREATE TABLE tb_examsetup (
+examid NUMBER(3,0),
+examname VARCHAR2(50)
+);
+ALTER TABLE tb_examsetup
+ADD CONSTRAINT pk_tb_examsetup PRIMARY KEY (examid);
+INSERT INTO tb_examsetup
+            (examid, examname
+            )
+     VALUES (1, '1st Semister'
+            );
+INSERT INTO tb_examsetup
+            (examid, examname
+            )
+     VALUES (2, '2st Semister'
+            );
+INSERT INTO tb_examsetup
+            (examid, examname
+            )
+     VALUES (3, '1st Tutorial'
+            );
+INSERT INTO tb_examsetup
+            (examid, examname
+            )
+     VALUES (4, '2st Tutorial'
+            );
+INSERT INTO tb_examsetup
+            (examid, examname
+            )
+     VALUES (5, 'Test'
+            );
