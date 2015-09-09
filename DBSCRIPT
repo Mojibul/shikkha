@@ -161,6 +161,7 @@ relationid NUMBER(3,0),
 contactno VARCHAR2(20),
 studentstatus VARCHAR2(1)
 );
+ALTER TABLE TB_STUDENTREGISTRATION ADD IDNO VARCHAR2(5);
 ALTER TABLE tb_studentregistration
 ADD CONSTRAINT pk_tb_studentregistration PRIMARY KEY (studentid);
 ALTER TABLE tb_studentregistration
