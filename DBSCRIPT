@@ -134,3 +134,31 @@ INSERT INTO tb_relation
             )
      VALUES (3, 'Others'
             );
+
+CREATE TABLE tb_studentregistration (
+studentid NUMBER(5,0),
+classid NUMBER(2,0),
+sectionid VARCHAR2(1),
+roll NUMBER(10),
+categoryid VARCHAR2(1),
+studentname VARCHAR2(100),
+fathername VARCHAR2(100),
+mothername VARCHAR2(100),
+dateofbirth DATE,
+presentaddress VARCHAR2(200),
+permanentaddress VARCHAR2(200),
+gurdianname VARCHAR2(100),
+relationid NUMBER(3,0),
+contactno VARCHAR2(20),
+studentstatus VARCHAR2(1)
+);
+ALTER TABLE tb_studentregistration
+ADD CONSTRAINT pk_tb_studentregistration PRIMARY KEY (studentid);
+ALTER TABLE tb_studentregistration
+ADD CONSTRAINT fk_classid_studentregistration FOREIGN KEY (classid) REFERENCES tb_class(classid);
+ALTER TABLE tb_studentregistration
+ADD CONSTRAINT fk_categoryid_stdregistration FOREIGN KEY (categoryid) REFERENCES tb_studentcategory(categoryid );
+ALTER TABLE tb_studentregistration
+ADD CONSTRAINT fk_sectionid_stdregistration FOREIGN KEY (sectionid) REFERENCES tb_studentsection(sectionid );
+ALTER TABLE tb_studentregistration
+ADD CONSTRAINT fk_relationid_stdregistration FOREIGN KEY (relationid) REFERENCES tb_relation(relationid );
