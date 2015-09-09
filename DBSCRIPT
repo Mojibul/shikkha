@@ -109,7 +109,16 @@ INSERT INTO tb_studentsection
             )
      VALUES ('E', 'Evening'
             );
-
+INSERT INTO tb_studentsection
+            (sectionid, sectionname
+            )
+     VALUES ('A', 'A Section'
+            );
+INSERT INTO tb_studentsection
+            (sectionid, sectionname
+            )
+     VALUES ('B', 'B Section'
+            );
 -- CREATING RELATION TABLE 
 CREATE TABLE tb_relation
 (
