@@ -357,3 +357,10 @@ INSERT INTO tb_examsetup
             )
      VALUES (5, 'Test'
             );
+            
+-- Creating student Image table            
+ CREATE TABLE tb_studentimage (
+studentid NUMBER(5,0),
+studentpic BLOB
+
+)
