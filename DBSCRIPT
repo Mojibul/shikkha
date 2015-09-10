@@ -442,3 +442,16 @@ INSERT INTO tb_studentresult
      VALUES (1, 8, 1, 13, 20, 24,
              17
             );
+CREATE   TABLE tb_studentattendance
+   (    studentid NUMBER(5,0),
+    classid NUMBER(2,0),
+    examid NUMBER(3,0),
+  attendance NUMBER(3)
+     );
+
+ALTER TABLE tb_studentattendance ADD CONSTRAINT pk_tb_studentattendance PRIMARY KEY (studentid,classid,examid);
+INSERT INTO tb_studentattendance
+            (studentid, classid, examid, attendance
+            )
+     VALUES (1, 1, 1, 104
+            );
