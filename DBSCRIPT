@@ -364,3 +364,81 @@ studentid NUMBER(5,0),
 studentpic BLOB
 
 )
+
+--- Creating student resutl entry table
+/* Formatted on 2015/09/10 12:15 (Formatter Plus v4.8.8) */
+CREATE TABLE tb_studentresult
+(studentid NUMBER(5,0),
+classid NUMBER(2,0),
+examid NUMBER(3,0),
+subjectid NUMBER(5,0),
+classtest NUMBER(5,2),
+written   NUMBER(5,2),
+objective NUMBER(5,2)
+);
+
+ALTER TABLE tb_studentresult ADD CONSTRAINT pk_tb_studentresult PRIMARY KEY (studentid,classid,examid,subjectid);
+
+INSERT INTO tb_studentresult
+            (studentid, classid, examid, subjectid, classtest, written,
+             objective
+            )
+     VALUES (1, 8, 1, 1, 21, 47,
+             36
+            );
+INSERT INTO tb_studentresult
+            (studentid, classid, examid, subjectid, classtest, written,
+             objective
+            )
+     VALUES (1, 8, 1, 2, 22, 77,
+             0
+            );
+INSERT INTO tb_studentresult
+            (studentid, classid, examid, subjectid, classtest, written,
+             objective
+            )
+     VALUES (1, 8, 1, 3, 21, 51,
+             23
+            );
+INSERT INTO tb_studentresult
+            (studentid, classid, examid, subjectid, classtest, written,
+             objective
+            )
+     VALUES (1, 8, 1, 4, 24, 55,
+             39
+            );
+INSERT INTO tb_studentresult
+            (studentid, classid, examid, subjectid, classtest, written,
+             objective
+            )
+     VALUES (1, 8, 1, 5, 22, 53,
+             38
+            );
+INSERT INTO tb_studentresult
+            (studentid, classid, examid, subjectid, classtest, written,
+             objective
+            )
+     VALUES (1, 8, 1, 6, 23, 43,
+             40
+            );
+INSERT INTO tb_studentresult
+            (studentid, classid, examid, subjectid, classtest, written,
+             objective
+            )
+     VALUES (1, 8, 1, 9, 21, 21,
+             19
+            );
+INSERT INTO tb_studentresult
+            (studentid, classid, examid, subjectid, classtest, written,
+             objective
+            )
+     VALUES (1, 8, 1, 11, 17, 25,
+             18
+            );
+INSERT INTO tb_studentresult
+            (studentid, classid, examid, subjectid, classtest, written,
+             objective
+            )
+     VALUES (1, 8, 1, 13, 20, 24,
+             17
+            );
