@@ -455,3 +455,4 @@ INSERT INTO tb_studentattendance
             )
      VALUES (1, 1, 1, 104
             );
+ALTER TABLE TB_STUDENTATTENDANCE ADD WORKINGDAYS NUMBER(3,0);
